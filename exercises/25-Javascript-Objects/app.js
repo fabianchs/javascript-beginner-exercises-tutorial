@@ -33,6 +33,26 @@ function addAllFamilyLuckyNumbers(anArray){
 
 //Enter all your code here:
 
+family.members[1].significant_other.lucky_numbers[3] = 33;
+
+let person3 = new Object();
+person3.name = "Jimmy";
+person3.lastname = "Doe";
+person3.age = 13;
+person3.gender = "male";
+person3.lucky_numbers = [1, 2, 3, 4];
+person3.significant_other = null;
+family.members.push(person3);
 
 //Do not make changes below:
-console.log(addAllFamilyLuckyNumbers(family.members)); 
+console.log('La sumatoria de todos los números de la suerte de la familia Doe es: ');
+console.log(addAllFamilyLuckyNumbers(family.members));
+
+console.log('\nEl cuarto número de la suerte de John Doe es:')
+console.log(family.members[1].significant_other.lucky_numbers[3]);
+
+console.log('\nEsta es la información de la tercera persona de la familia Doe:');
+console.log(person3);
+
+console.log('\nEsta es la información de toda la familia Doe:');
+console.log(family);
